@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veja seu IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem">
+                <img src="undraw_personal-trainer_bqkg.svg" alt="Treine">
+            </div>
+            <div id="form">
+                <h1 id="title">Calculadora - IMC</h1>
+                <p>
+                    <label for="txtpeso">Peso em kg</label>
+                </p>
+                    <div class="input-box">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="text" name="peso" id="txtpeso" minlength="1" maxlength="3">
+                        <i class="unidade">Kg</i>
+                    </div>
+                <p>
+                    <label for="txtaltura">Altura em metros</label>
+                </p>
+                    <div class="input-box">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="text" name="altura" id="txtaltura">
+                        <span class="unidade">m</span>
+                    </div>
+                <br>
+                <input type="button" value="Calcular" id="botao" onclick="calcular()">
+                <div id="conteudores">
+                    <div id="res">
+                        <span id="imc">20</span>
+                        <br>
+                        <span id="seuimc">Seu IMC</span>
+                        <span id="msg">obesidade morbida</span>
+                    </div>
+                        <div id="link"><a href="https://www.souenfermagem.com.br/saude-e-bem-estar/tudo-sobre-imc/" target="_blank">Mais informações sobre o IMC</a><i class="fas fa-arrow-up-right-from-square" id="externo"></i></div>
+                        </div>
+                </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
